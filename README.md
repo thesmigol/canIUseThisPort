@@ -8,9 +8,12 @@ npm i can-i-use-this-port --save
 
 ## Usage
 
-    const  citp =  require("can-i-use-this-port");
+    const  ciutp =  require("can-i-use-this-port");
     
-	cipt(port); -> return the free port to use
-	cipt(3000);
+	cipt(port); -> return the next free port to use
+	cipt(3000); 
+	{
+		return -> 3001 (the port will be check before it)
+	}
 	
 

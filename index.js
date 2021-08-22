@@ -6,12 +6,13 @@ module.exports = function VerificarPorta(string){
     server.once('listening', function() { server.close() } ) 
     server.listen(string);
     let ouvindo = server.listening
+    server.close()
     return ouvindo
     }
   do{
     string++
     var sabotagem = VP(string)
-  }while(sabotagem !== true)
+  } while(sabotagem !== true)
   return string
 }
 
